@@ -1,0 +1,11 @@
+[package]
+name = "ffrs"
+version = "0.1.0"
+edition = "2021"
+description = "Base para engenharia reversa e reescrita do Final Fight (SNES) em Rust"
+
+# Sem dependências externas: só copiar a pasta e rodar `cargo run`.
+[dependencies]
+
+[profile.release]
+opt-level = 3

@@ -1,0 +1,5 @@
+# Tabelas de salto do Final Fight (USA), conferidas byte a byte na ROM.
+# Formato: BANCO:ENDEREÇO  NÚMERO_DE_ENTRADAS   (só endereços, nenhum dado do jogo)
+00:8804 4    # IRQ: JSR ($8804,X), X vem de $36 (0,2,4,6)
+00:885B 3    # JMP ($885B,X), X vem de $3E; a entrada 0 é só um RTS
+00:8237 12   # despachante de tarefas em 00:814E: 12 trampolins JML em 00:824F-827B
